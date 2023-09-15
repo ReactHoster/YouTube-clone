@@ -6,7 +6,7 @@ export const YoutubeContext = createContext();
 const YoutubeContextProvider = ({ children }) => {
   const [activeCategory, setActiveCategory] = useState("New");
 
-  const BASE_URL = "https://youtube-v31.p.rapidapi.com/captions";
+  const BASE_URL = "https://youtube-v31.p.rapidapi.com";
 
   const options = {
     params: {
