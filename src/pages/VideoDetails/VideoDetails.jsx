@@ -52,7 +52,7 @@ const VideoDetails = () => {
       </Helmet>
       <div className="px-0 md:px-10 lg:px-14 sticky top-0 z-10 md:static md:z-0">
         <ReactPlayer
-          url={`https://www.youtube-nocookie.com/watch?v=${videoId}`}
+          url={`https://www.youtube-nocookie.com/embed/${videoId}`}
           className="react-player"
           controls
         />
