@@ -13,7 +13,7 @@ const YoutubeContextProvider = ({ children }) => {
       maxResults: "48",
     },
     headers: {
-      "X-RapidAPI-Key": import.meta.env.VITE_API_KEY,
+      "X-RapidAPI-Key": process.env.VITE_API_KEY,
       "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
     },
   };
