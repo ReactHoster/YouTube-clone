@@ -51,11 +51,7 @@ const VideoDetails = () => {
         <title>{`${videoDetail?.snippet?.title} - YouTube`}</title>
       </Helmet>
       <div className="px-0 md:px-10 lg:px-14 sticky top-0 z-10 md:static md:z-0">
-        <ReactPlayer
-          url={`https://www.youtube-nocookie.com/embed/${videoId}`}
-          className="react-player"
-          controls
-        />
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/${videoId}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
       <div className="px-4 sm:px-6 md:px-10 lg:px-14 py-3 w-full text-white">
         <h1 className="md:font-bold font-semibold md:text-xl text-lg py-4 md:py-5">
